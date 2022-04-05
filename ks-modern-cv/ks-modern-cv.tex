@@ -6,13 +6,8 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-%% ---- Preamble Injected from thaipdf package (BEGIN) ---- %%
-
-%% ขอบคุณแหล่งข้อมูลต่อไปนี้ สำหรับคำแนะนำการตั้งค่าภาษาไทยใน LaTeX %%
-%   ฑิตยา หวานวารี: http://pioneer.netserv.chula.ac.th/~wdittaya/LaTeX/LaTeXThai.pdf
-%   mathmd from Github; https://github.com/mathmd/polygloTeX
 
 %% ---------------- เริ่มการตั้งค่าภาษาไทย ---------------- %%
 
@@ -24,14 +19,8 @@
 \usepackage{fontspec} % For Thai font
 \defaultfontfeatures{Mapping=tex-text} % map LaTeX formating, e.g., ``'', to match the current font
 
-% To change the main font, uncomment one of the below command, and make sure you have these fonts installed.
-% \setmainfont{TeX Gyre Termes} % Free Times
-% \setsansfont{TeX Gyre Heros} % Free Helvetica
-% \setmonofont{TeX Gyre Cursor} % Free Courier
-
 % ตั้งฟอนต์หลักภาษาไทย ที่น่าใช้ เช่น: "TH Sarabun New", "Laksaman"
-\newfontfamily{\thaifont}[Scale=MatchUppercase,Mapping=textext]{TH
-Sarabun New}
+\newfontfamily{\thaifont}[Scale=MatchUppercase,Mapping=textext]{TH Sarabun New}
 \newenvironment{thailang}{\thaifont}{} % create environment for Thai language
 \usepackage[Latin,Thai]{ucharclasses} % ตั้งค่าให้ใช้ "thailang" environment เฉพาะ string ที่เป็น Unicode ภาษาไทย
 
@@ -42,13 +31,7 @@ Sarabun New}
 % \renewcommand{\baselinestretch}{1.5} % Line Spacing (1.5 is recommended for Thai language)
 
 
-%% ---- using alphabatic language ---- %%
-% \usepackage{polyglossia}
-% \setdefaultlanguage{english} % it is preferrable to set English as the main language, since the numeric system is compatible with most LaTeX features such as 'enumerate' and so on
-% \setotherlanguages{thai}
-
-
-%% ---- Preamble Injected from thaipdf package (END) ---- %%
+%% ---------------- จบการตั้งค่าภาษาไทย ---------------- %%
 
 % moderncv themes
 \moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
@@ -58,7 +41,7 @@ Sarabun New}
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-\setlength{\footskip}{136.00005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+\setlength{\footskip}{110pt}        % 136.00005pt (default)  % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -83,38 +66,38 @@ Sarabun New}
 \usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
 
 % personal data
-\name{ชื่อ}{นามสกุล}
-\title{Résumé title}                               % optional, remove / comment the line if not wanted
-\born{4 July 1776}                                 % optional, remove / comment the line if not wanted
-\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\phone[fixed]{+2~(345)~678~901}
-\phone[fax]{+3~(456)~789~012}
-\email{john@doe.org}                               % optional, remove / comment the line if not wanted
-\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\name{กิตติพศ}{ศิริวงศ์รังสรร}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+% \born{19 May 1995}                                 % optional, remove / comment the line if not wanted
+% \address{30/3 ซ.รัชดาภิเษก 42 จตุจักร}{10900}{กรุงเทพฯ}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{085-199-1962}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{ki11ip0.s.a.s@gmail.com}                               % optional, remove / comment the line if not wanted
+% \homepage{https://lightbridge.netlify.app}                         % optional, remove / comment the line if not wanted
 
 % Social icons
-\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
-\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
-\social[twitter]{ji\_doe}                             % optional, remove / comment the line if not wanted
-\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
-\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
-\social[stackoverflow]{0000000/johndoe}            % optional, remove / comment the line if not wanted
-\social[bitbucket]{jdoe}                           % optional, remove / comment the line if not wanted
-\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
-\social[orcid]{0000-0000-000-000}                  % optional, remove / comment the line if not wanted
-\social[researchgate]{jdoe}                        % optional, remove / comment the line if not wanted
-\social[researcherid]{jdoe}                        % optional, remove / comment the line if not wanted
-\social[telegram]{jdoe}                            % optional, remove / comment the line if not wanted
-\social[whatsapp]{12345678901}                     % optional, remove / comment the line if not wanted
-\social[signal]{12345678901}                       % optional, remove / comment the line if not wanted
-\social[matrix]{@johndoe:matrix.org}               % optional, remove / comment the line if not wanted
-\social[googlescholar]{googlescholarid}            % optional, remove / comment the line if not wanted
+% \social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+% \social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+% \social[twitter]{ji\_doe}                             % optional, remove / comment the line if not wanted
+\social[github]{Lightbridge-KS}                              % optional, remove / comment the line if not wanted
+% \social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+% \social[stackoverflow]{0000000/johndoe}            % optional, remove / comment the line if not wanted
+% \social[bitbucket]{jdoe}                           % optional, remove / comment the line if not wanted
+% \social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+% \social[orcid]{0000-0000-000-000}                  % optional, remove / comment the line if not wanted
+% \social[researchgate]{jdoe}                        % optional, remove / comment the line if not wanted
+% \social[researcherid]{jdoe}                        % optional, remove / comment the line if not wanted
+% \social[telegram]{jdoe}                            % optional, remove / comment the line if not wanted
+% \social[whatsapp]{12345678901}                     % optional, remove / comment the line if not wanted
+% \social[signal]{12345678901}                       % optional, remove / comment the line if not wanted
+% \social[matrix]{@johndoe:matrix.org}               % optional, remove / comment the line if not wanted
+% \social[googlescholar]{googlescholarid}            % optional, remove / comment the line if not wanted
 
 
-\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{pictures/profile}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -135,51 +118,34 @@ Sarabun New}
 \makecvtitle
 
 \section{Education}
-\cventry{year--year}{สวัสดี}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{2556--2561}{หลักสูตรแพทยศาสตรบัณฑิต}{คณะแพทยศาสตร์โรงพยาบาลรามาธิบดี มหาวิทยาลัยมหิดล}{}{}{เกียรตินิยมอันดับ 2}  % arguments 3 to 6 can be left empty
+\cventry{2553--2555}{มัธยมศึกษาตอนปลาย}{โรงเรียนเตรียมอุดมศึกษา}{}{}{}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2\newline{}Description line 3}
 
-\section{Master thesis}
-\cvitem{title}{\emph{Title}}
-\cvitem{supervisors}{Supervisors}
-\cvitem{description}{Short thesis abstract}
+% \section{Master thesis}
+% \cvitem{title}{\emph{Title}}
+% \cvitem{supervisors}{Supervisors}
+% \cvitem{description}{Short thesis abstract}
+
 
 \section{Experience}
-\subsection{Vocational}
-\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}
-Detailed achievements:
-\begin{itemize}
-\item Achievement 1
-\item Achievement 2 (with sub-achievements)
-  \begin{itemize}
-  \item Sub-achievement (a);
-  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-    \begin{itemize}
-    \item Sub-sub-achievement i;
-    \item Sub-sub-achievement ii;
-    \item Sub-sub-achievement iii;
-    \end{itemize}
-  \item Sub-achievement (c);
-  \end{itemize}
-\item Achievement 3
-\item Achievement 4
-\end{itemize}}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2\newline{}Description line 3}
-\subsection{Miscellaneous}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+\subsection{Pre-Clinical}
+\cventry{2563--2565}{แพทย์ใช้ทุน}{ภาควิชาสรีรวิทยา คณะแพทยศาสตร์ศิริราชพยาบาล มหาวิทยาลัยมหิดล}{}{}{}
+\subsection{Clinical}
+\cventry{2562--2563}{แพทย์เพิ่มพูนทักษะ}{โรงพยาบาลพระนั่งเกล้า}{จังหวัดนนทบุรี}{}{}
+
 
 \section{Languages}
-\cvitemwithcomment{Language 1}{Skill level}{Comment}
-\cvitemwithcomment{Language 2}{Skill level}{Comment}
-\cvitemwithcomment{Language 3}{Skill level}{Comment}
-\cvitemwithcomment{Language 4}{Skill level}{Comment}
+\cvitemwithcomment{English}{Good User}{IELTS Academic test = 7}
+% \cvitemwithcomment{Language 2}{Skill level}{Comment}
 
-\section{Computer skills}
-\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+% \section{Computer skills}
+% \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
 
-\section{Skill matrix}
-\cvitem{Skill matrix}{Alternatively, provide a skill matrix to show off your skills}
+\section{Computer Skills}
+% \cvitem{Skill matrix}{Alternatively, provide a skill matrix to show off your skills}
 %% Skill matrix as an alternative to rate one's skills, computer or other. 
 
 %% Adjusts width of skill matrix columns. 
@@ -222,12 +188,28 @@ Detailed achievements:
 % \cvskillhead[0.25em][Level][F\"ahigkeit][Jahre][Bemerkung]
 
 %% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}% 
-%% Example usages:
-\cvskillentry*{Language:}{3}{Python}{2}{I'm so experienced in Python and have realised a million projects. At least.}
-\cvskillentry{}{2}{Lilypond}{14}{So much sheet music! Man, I'm the best!}
-\cvskillentry{}{3}{\LaTeX}{14}{Clearly I rock at \LaTeX}
-\cvskillentry*{OS:}{3}{Linux}{2}{I only use Archlinux btw}% notice the use of the starred command and the optional 
-\cvskillentry*[1em]{Methods}{4}{SCRUM}{8}{SCRUM master for 5 years}
+%% Language:
+\cvskillentry*{Languages:}{4}{R}{2}{I enjoy my freetime as an R developer and Data Analyst using R.}
+\cvskillentry{}{2}{Python}{1}{Not frequently use}
+\cvskillentry{}{1}{JavaScript}{1}{I sometime use JS to write Google App Script.}
+
+%% Markup Language
+\cvskillentry*{Markup Languages:}{4}{R Markdown}{2}{I use often for writing reproducible reports, articles, and website.}
+\cvskillentry{}{2}{\LaTeX}{1}{It's good for typesetting PDF.}
+
+%% Command Line Tools:
+\cvskillentry*{CLI:}{2}{Git}{2}{I like Git and Github.}% notice the use of the starred command and the optional 
+\cvskillentry{}{2}{Linux Shell}{2}{I use Zsh.}% notice the use of the starred command and the optional 
+
+
+%% Software:
+\cvskillentry*{Software:}{4}{RStudio}{2}{It's my favorite IDE for R.}
+\cvskillentry{}{3}{VS code}{1}{It's my text editor of choice for general usage.}
+
+%% Office Tool:
+\cvskillentry*{Office Tools:}{4}{Google Sheets}{2}{It is a very flexible spreadsheet tool with lots of formulas.}
+\cvskillentry{}{2}{Microsoft Excel}{1}{I have to use Excel sometimes as well.}
+
 %% \cvskill{<0-5>} command
 % \cvitem{\textbackslash{cvskill}:}{Skills can be visually expressed by the \textbackslash{cvskill} command, e.g. \cvskill{2}}
 
@@ -243,7 +225,7 @@ Detailed achievements:
 
 \section{Extra 2}
 \cvlistdoubleitem{Item 1}{Item 4}
-\cvlistdoubleitem{Item 2}{Item 5\cite{book2}}
+\cvlistdoubleitem{Item 2}{Item 5}
 \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
 
 \section{References}
