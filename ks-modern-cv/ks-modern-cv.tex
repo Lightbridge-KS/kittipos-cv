@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper, colorlinks, sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 
 %% ---------------- เริ่มการตั้งค่าภาษาไทย ---------------- %%
@@ -32,6 +32,9 @@
 
 
 %% ---------------- จบการตั้งค่าภาษาไทย ---------------- %%
+
+
+
 
 % moderncv themes
 \moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
@@ -64,6 +67,7 @@
 
 % document language
 \usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+
 
 % personal data
 \name{กิตติพศ}{ศิริวงศ์รังสรร}
@@ -117,6 +121,15 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
+% Link Colors
+% \definecolor{links}{HTML}{2A1B81} % for define HTML Color
+\hypersetup{
+    colorlinks=true,
+    linkcolor={red!50!black},
+    urlcolor={red!50!black},
+    citecolor={blue!50!black},
+}
+
 \section{Education}
 \cventry{2556--2561}{หลักสูตรแพทยศาสตรบัณฑิต}{คณะแพทยศาสตร์โรงพยาบาลรามาธิบดี มหาวิทยาลัยมหิดล}{}{}{เกียรตินิยมอันดับ 2}  % arguments 3 to 6 can be left empty
 \cventry{2553--2555}{มัธยมศึกษาตอนปลาย}{โรงเรียนเตรียมอุดมศึกษา}{}{}{}
@@ -136,8 +149,8 @@
 
 
 \section{Languages}
+\cvitemwithcomment{Thai}{Proficient}{Native Thai Speaker}
 \cvitemwithcomment{English}{Good User}{IELTS Academic test = 7}
-% \cvitemwithcomment{Language 2}{Skill level}{Comment}
 
 % \section{Computer skills}
 % \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
@@ -189,7 +202,7 @@
 
 %% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}% 
 %% Language:
-\cvskillentry*{Languages:}{4}{R}{2}{I enjoy my freetime as an R developer and Data Analyst using R.}
+\cvskillentry*{Languages:}{4}{R}{2}{I enjoy my free time as an R developer and Data Analyst using R.}
 \cvskillentry{}{2}{Python}{1}{Not frequently use}
 \cvskillentry{}{1}{JavaScript}{1}{I sometime use JS to write Google App Script.}
 
@@ -198,7 +211,7 @@
 \cvskillentry{}{2}{\LaTeX}{1}{It's good for typesetting PDF.}
 
 %% Command Line Tools:
-\cvskillentry*{CLI:}{2}{Git}{2}{I like Git and Github.}% notice the use of the starred command and the optional 
+\cvskillentry*{CLI:}{2}{Git}{2}{I manage my project with Git and \href{https://github.com/Lightbridge-KS}{Github}.}% notice the use of the starred command and the optional 
 \cvskillentry{}{2}{Linux Shell}{2}{I use Zsh.}% notice the use of the starred command and the optional 
 
 
@@ -217,6 +230,12 @@
 \cvitem{hobby 1}{Description}
 \cvitem{hobby 2}{Description}
 \cvitem{hobby 3}{Description}
+
+\section{Extra 1}
+\cvlistitem{\textbf{Data Analysis with R Programming by Google} (Coursera) — \href{https://coursera.org/share/928174b5a263fe14edcbc63b9d566d12}{Certificate}}
+\cvlistitem{Item 2}
+\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
 
 \section{Extra 1}
 \cvlistitem{Item 1}
