@@ -68,7 +68,6 @@
 % document language
 \usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
 
-
 % personal data
 \name{กิตติพศ}{ศิริวงศ์รังสรร}
 \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
@@ -78,7 +77,7 @@
 % \phone[fixed]{+2~(345)~678~901}
 % \phone[fax]{+3~(456)~789~012}
 \email{ki11ip0.s.a.s@gmail.com}                               % optional, remove / comment the line if not wanted
-% \homepage{https://lightbridge.netlify.app}                         % optional, remove / comment the line if not wanted
+\homepage{lightbridge.netlify.app}                         % optional, remove / comment the line if not wanted
 
 % Social icons
 % \social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
@@ -101,7 +100,7 @@
 
 % \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 % \photo[64pt][0.4pt]{pictures/profile}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+\quote{Medical Doctor \& R developer}                                 % optional, remove / comment the line if not wanted
 
 % bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -126,8 +125,8 @@
 \hypersetup{
     colorlinks=true,
     linkcolor={red!50!black},
-    urlcolor={red!50!black},
-    citecolor={blue!50!black},
+    urlcolor={red!60!black},
+    citecolor={blue!50!gray}
 }
 
 \section{Education}
@@ -141,7 +140,7 @@
 % \cvitem{description}{Short thesis abstract}
 
 
-\section{Experience}
+\section{Employment}
 \subsection{Pre-Clinical}
 \cventry{2563--2565}{แพทย์ใช้ทุน}{ภาควิชาสรีรวิทยา คณะแพทยศาสตร์ศิริราชพยาบาล มหาวิทยาลัยมหิดล}{}{}{}
 \subsection{Clinical}
@@ -202,7 +201,7 @@
 
 %% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}% 
 %% Language:
-\cvskillentry*{Languages:}{4}{R}{2}{I enjoy my free time as an R developer and Data Analyst using R.}
+\cvskillentry*{Languages:}{4}{R}{2}{I enjoy my free time as an R developer \& Data Analyst using R.}
 \cvskillentry{}{2}{Python}{1}{Not frequently use}
 \cvskillentry{}{1}{JavaScript}{1}{I sometime use JS to write Google App Script.}
 
@@ -218,6 +217,7 @@
 %% Software:
 \cvskillentry*{Software:}{4}{RStudio}{2}{It's my favorite IDE for R.}
 \cvskillentry{}{3}{VS code}{1}{It's my text editor of choice for general usage.}
+\cvskillentry{}{2}{Jupyter Notebook}{1}{I sometime use for writing Python.}
 
 %% Office Tool:
 \cvskillentry*{Office Tools:}{4}{Google Sheets}{2}{It is a very flexible spreadsheet tool with lots of formulas.}
@@ -226,39 +226,84 @@
 %% \cvskill{<0-5>} command
 % \cvitem{\textbackslash{cvskill}:}{Skills can be visually expressed by the \textbackslash{cvskill} command, e.g. \cvskill{2}}
 
+% Interests
 \section{Interests}
-\cvitem{hobby 1}{Description}
-\cvitem{hobby 2}{Description}
-\cvitem{hobby 3}{Description}
+\cvitem{Data Science}{Statistics and machine learning with R}
+\cvitem{R}{ใช้ R สำหรับ data science, เขียน R package, สร้าง dynamic document และ web application}
 
-\section{Extra 1}
+% Training
+\section{Training}
+% Academic Training
+\subsection{Academic training}
 \cvlistitem{\textbf{Data Analysis with R Programming by Google} (Coursera) — \href{https://coursera.org/share/928174b5a263fe14edcbc63b9d566d12}{Certificate}}
-\cvlistitem{Item 2}
-\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+\cvlistitem{\textbf{Statistical Learning by StanfordOnline} (Coursera) — \href{https://courses.edx.org/certificates/5547b0ad382e4372b5173f4d482d60a5}{Certificate}}
+\cvlistitem{\textbf{Advanced R Programming by Johns Hopkins University} (Coursera) — \href{https://coursera.org/share/a22e0c48cc925553d35f39bd5d1bad5b}{Certificate}}
+\cvlistitem{\textbf{Cell and molecular biology course for postgraduate students} (Mahidol university)}
+
+% Other Training
+\subsection{Other training}
+\cvlistitem{\textbf{การพัฒนาข้อสอบปรนัยเพื่อประเมินความรู้ทางการแพทย์} (SHEE) — \href{https://drive.google.com/file/d/13Kp3rwHjwCgU5Vx2f2XaKDFy2wQ17xfI/view?usp=sharing}{Certificate}}
+\cvlistitem{\textbf{การทำสไลด์นำเสนออย่างมืออาชีพ} (SHEE) — \href{https://drive.google.com/file/d/1G_nULlchnzjW2697sG8--IuaexCVfoW-/view?usp=sharing}{Certificate}}
 
 
-\section{Extra 1}
-\cvlistitem{Item 1}
-\cvlistitem{Item 2}
-\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+\section{Teaching}
+\cvitem{2564 - 2565}{\textbf{Respiratory physiology} (SIET216)}
+\cvitem{}{\textbf{Cardiovascular physiology} (SIET216)}
+\cvitem{}{\textbf{Nervous System 1 (PNS)} (SIET216)}
 
-\section{Extra 2}
-\cvlistdoubleitem{Item 1}{Item 4}
-\cvlistdoubleitem{Item 2}{Item 5}
-\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
 
-\section{References}
+\section{Presentation}
+
+\subsection{At the department of physiology (2564--2565)}
+\cvlistitem{นำเสนอ  โครงการวิจัย-นวัตกรรม ในหัวข้อ \textbf{“R Journey in Physiology Department”} — \href{https://kittipos-r-in-sips.netlify.app}{Slide}}
+\cvlistitem{นำเสนอ  โครงการวิจัย-นวัตกรรม ในหัวข้อ \textbf{“Web application วิเคราะห์คะแนนนักศึกษาจากระบบ SELECx”} — \href{https://si-physio-intern.shinyapps.io/SELECx_mcq_analysis/}{SELECx MCQ Analysis}}
+\cvlistitem{นำเสนอ Scientific articles ใน Journal clubs ในหัวข้อ \textbf{“Heart rate variability analysis and cardiac dysautonomia in ischemic stroke patients”}}
+\cvlistitem{นำเสนอ Scientific articles ใน Journal clubs ในหัวข้อ \textbf{“RSA in the immediate post-exercise period: correlation with breathing-specific heart rate”}}
+
+
+
+% Other Experience
+\section{Other Experience}
+
+\subsection{At the department of physiology (2564--2565)}
+\cvlistitem{สร้างและออกแบบ \textbf{ระบบการติดตามภาระงานแพทย์ใช้ทุน} ด้วย Google Sheets และ R package: \texttt{googlesheets4} และ \texttt{googledrive}}
+\cvlistitem{ปฎิบัติงานช่วยเหลือแพทย์ประจำบ้านใน ward ผู้ป่วย COVID-19 ที่ ตึกอัษฎางค์ คณะแพทยศาสตร์ศิริราชพยาบาล ในระหว่างวันที่ 28/ก.ค./64 - 4/ส.ค./64}
+
+
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+\newpage
+
+% Projects
+\section{Projects}
 \begin{cvcolumns}
-  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+  \cvcolumn{R Package}{
+    \begin{itemize}
+      \item moodleStats \cite{moodleStats}
+      \item zoomclass \cite{zoomclass}
+      \item thaipdf \cite{thaipdf}
+    \end{itemize}
+    }
+  \cvcolumn{Web App}{
+    \begin{itemize}
+      \item SELECx MCQ Analysis \cite{SELECx-MCQ-Analysis}
+      \item SELECx Combine Quiz \cite{SELECx-Combine-Quiz}
+      \item BTPS Calculator \cite{BTPS-Calc}
+      \item Metabolic Rate \& Oxygen Consumption Calculator \cite{Met-Rate-Calc} 
+      \item Combine HRV \& BRS report files \cite{Comb-HRV-BRS}
+    \end{itemize}
+  }
 \end{cvcolumns}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
 \nocite{*}
-\bibliographystyle{plain}
+% \bibliographystyle{plain}
+\bibliographystyle{unsrt} % Sorting year from lastest first, see: https://tex.stackexchange.com/questions/4461/how-to-sort-bibtex-references-in-reverse-chronological-order
 \bibliography{publications}                        % 'publications' is the name of a BibTeX file
 
 % Publications from a BibTeX file using the multibib package
