@@ -19,7 +19,7 @@ jobs:
     - name: Pushes My CV file
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
-        # I need to update this secrets token at Sun, Jul 3 2022
+        # Repository Secrets
         API_TOKEN_GITHUB: ${{ secrets.COPY_FILES_ACROSS_REPO }}
       with:
         source_file: "ks-modern-cv/ks-modern-cv.pdf"
