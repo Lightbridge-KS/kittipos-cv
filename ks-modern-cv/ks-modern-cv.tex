@@ -74,10 +74,10 @@
 % \born{19 May 1995}                                 % optional, remove / comment the line if not wanted
 % \address{30/3 Ratchadapisek 42, Chatuchak}{Bangkok, Thailand}{10900} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \address{Bangkok}{Thailand}{10900} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-% \phone[mobile]{085-199-1962}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[mobile]{085-199-1962}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 % \phone[fixed]{+2~(345)~678~901}
-% \phone[fax]{+3~(456)~789~012}
-\email{ki11ip0.s.a.s@gmail.com}                               % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                       % optional, remove / comment the line if not wanted
+\email{kittipos.sir@mahidol.edu}                               % optional, remove / comment the line if not wanted
 \homepage{lightbridge.netlify.app}                         % optional, remove / comment the line if not wanted
 
 % Social icons
@@ -130,7 +130,16 @@
     citecolor={blue!50!gray} 
 }
 
-\section{Education}
+\section{Employments}
+\subsection{Radiology Resident}
+\cventry{2565--Now}{แพทย์ประจำบ้าน}{ภาควิชารังสีวิทยา สาขาวิชารังสีวิทยาวินิจฉัย คณะแพทยศาสตร์โรงพยาบาลรามาธิบดี มหาวิทยาลัยมหิดล}{}{}{}
+
+\subsection{Internist}
+\cventry{2563--2565}{แพทย์ใช้ทุน}{ภาควิชาสรีรวิทยา คณะแพทยศาสตร์ศิริราชพยาบาล มหาวิทยาลัยมหิดล}{}{}{}
+\cventry{2562--2563}{แพทย์เพิ่มพูนทักษะ}{โรงพยาบาลพระนั่งเกล้า}{จังหวัดนนทบุรี}{}{}
+
+
+\section{Educations}
 \cventry{2556--2561}{หลักสูตรแพทยศาสตรบัณฑิต}{คณะแพทยศาสตร์โรงพยาบาลรามาธิบดี มหาวิทยาลัยมหิดล}{}{}{เกียรตินิยมอันดับ 2}  % arguments 3 to 6 can be left empty
 \cventry{2553--2555}{มัธยมศึกษาตอนปลาย}{โรงเรียนเตรียมอุดมศึกษา}{}{}{}
 % \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2\newline{}Description line 3}
@@ -141,12 +150,6 @@
 % \cvitem{description}{Short thesis abstract}
 
 
-\section{Employment}
-\subsection{Pre-Clinical}
-\cventry{2563--2565}{แพทย์ใช้ทุน}{ภาควิชาสรีรวิทยา คณะแพทยศาสตร์ศิริราชพยาบาล มหาวิทยาลัยมหิดล}{}{}{}
-\subsection{Clinical}
-\cventry{2562--2563}{แพทย์เพิ่มพูนทักษะ}{โรงพยาบาลพระนั่งเกล้า}{จังหวัดนนทบุรี}{}{}
-
 
 \section{Languages}
 \cvitemwithcomment{Thai}{Proficient}{Native Thai Speaker}
@@ -156,7 +159,13 @@
 % \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
 % \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
 % \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+% Interests
+\section{Interests}
+\cvitem{Data Science}{I generally interested in all areas of data science including data analysis, data visualization, statistics, and machine learning.}
+\cvitem{Coding}{I like the concept of writing code to make life better, even simple project can automate tasks and be a prototype to scale up further. 
+My first and primary language is \href{https://cran.r-project.org}{\texttt{R}}. I've used \texttt{R} in many areas of data science from performing data analysis, data visualization, and statistics to building reproducible reports, web application, and more.}
 
+\newpage
 \section{Computer Skills}
 % \cvitem{Skill matrix}{Alternatively, provide a skill matrix to show off your skills}
 %% Skill matrix as an alternative to rate one's skills, computer or other. 
@@ -194,6 +203,7 @@
 % \cvskillplainlegend{}
 % \cvskillplainlegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte/Guru]{Legende}
 
+
 %% Add a head of the skill matrix table with descriptions.
 %% Usage \cvskillhead[<post_padding>][<Level>][<Skill>][<Years>][<Comment>]%
 \cvskillhead[-0.1em]%   this inserts the standard legend in english and adjust padding
@@ -202,14 +212,21 @@
 
 %% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}% 
 %% Language:
-\cvskillentry*{Languages:}{4}{R}{2}{I enjoy my free time as an R developer \& Data Analyst using R.}
-\cvskillentry{}{2}{Python}{1}{Not frequently use}
-\cvskillentry{}{1}{JavaScript}{1}{I sometime use JS to write Google App Script.}
+\cvskillentry*{Languages:}{4}{\href{https://cran.r-project.org}{R}}{2}{R is my \textit{primary} language. I enjoy my free time as an R developer (building R packages and Shiny applications) and perform data analysis using R.}
+\cvskillentry{}{2}{\href{https://www.python.org}{Python}}{1}{Python is very popular in data science which I would like to learn more to complement my R skill.}
+\cvskillentry{}{1}{\href{https://julialang.org}{Julia}}{1}{Julia is a high-performance scientific computing language. I've learned some basic of Julia and might take a deeper dive in the future.}
+\cvskillentry{}{1}{JavaScript}{1}{I sometimes use JS to write \href{https://developers.google.com/apps-script}{Google Apps Script}.}
+\cvskillentry{}{2}{HTML/CSS}{2}{I've known some basic to build simple HTML document or style simple web page.}
 
-%% Markup Language
-\cvskillentry*{Markup Languages:}{4}{R Markdown}{2}{I use often for writing reproducible reports, articles, and website.}
-\cvskillentry{}{2}{\LaTeX}{1}{It's good for typesetting PDF.}
+%% Literate Programming
+\cvskillentry*{Literate Programming:}{4}{\href{https://quarto.org}{Quarto}}{1}{An open-source scientific and technical publishing system. I recently use Quarto a lot to making reports, books, and blog posts.}
+\cvskillentry{}{4}{\href{https://rmarkdown.rstudio.com}{R Markdown}}{2}{A dynamic documents that combine code, rendered output, and prose using R. I've used a lot before Quarto was born.}
+\cvskillentry{}{2}{\href{https://www.latex-project.org}{\LaTeX}}{1}{A high-quality typesetting system for PDF. This CV was made using \LaTeX !}
 
+%% R skills
+\cvskillentry*{R Packages:}{4}{\href{https://www.tidyverse.org}{Tidyverse}}{2}{A collection of R packages for data science. I like to \texttt{tidyverse} for data import, transformation, and plotting.}
+\cvskillentry{}{2}{\href{https://www.tidymodels.org}{Tidymodels}}{1}{A collection of packages for modeling and machine learning using tidyverse principles. I'm interested to learn more \texttt{tidymodels} tools in the future.}
+\cvskillentry{}{3}{\href{https://shiny.rstudio.com}{Shiny}}{2}{A data science web application framework in R. I've build quite a lot of Shiny app and would like to expand my skill on UI development and making production-grade app.}
 %% Command Line Tools:
 \cvskillentry*{CLI:}{2}{Git}{2}{I manage my project with Git and \href{https://github.com/Lightbridge-KS}{Github}.}% notice the use of the starred command and the optional 
 \cvskillentry{}{2}{Linux Shell}{2}{I use Zsh.}% notice the use of the starred command and the optional 
@@ -227,10 +244,53 @@
 %% \cvskill{<0-5>} command
 % \cvitem{\textbackslash{cvskill}:}{Skills can be visually expressed by the \textbackslash{cvskill} command, e.g. \cvskill{2}}
 
-% Interests
-\section{Interests}
-\cvitem{Data Science}{Statistics and machine learning with R}
-\cvitem{R}{ใช้ R สำหรับ data science, เขียน R package, สร้าง dynamic document และ web application}
+
+% Projects
+% \cvlistitem{\textbf{\href{URL}{TEXT}:} Blah blah \cite{key}.}
+
+
+%% R-PKG Projects
+\section{R Package Projects}
+\subsection{General}
+\cvlistitem{\textbf{\href{https://lightbridge-ks.github.io/thaipdf/}{thaipdf}:} R Markdown to PDF in Thai language (\href{https://CRAN.R-project.org/package=thaipdf}{CRAN}) \cite{thaipdf}.}
+
+\subsection{Education}
+\cvlistitem{\textbf{\href{https://lightbridge-ks.github.io/moodleStats/}{moodleStats}:} Perform quiz analysis and item analysis on Moodle Grades Report \cite{moodleStats}.}
+\cvlistitem{\textbf{\href{https://lightbridge-ks.github.io/moodleQuiz/}{moodleQuiz}:} Combine and manipulate Moodle Quiz Report for grading \cite{moodleQuiz}.}
+\cvlistitem{\textbf{\href{https://lightbridge-ks.github.io/zoomclass/}{zoomclass}:} Analyze Zoom’s participants report and chat file \cite{zoomclass}.}
+
+\subsection{Research}
+\cvlistitem{\textbf{\href{https://lightbridge-ks.github.io/labChartHRV/}{labChartHRV}:} Import and manipulate LabChart’s Heart Rate Variability Data \cite{labChartHRV}.}
+
+%% Web App Project
+\section{Web Application Projects}
+
+\cvlistitem{\textbf{\href{https://kittipos.shinyapps.io/tirads-calc/}{TIRADS Calculator}:} A Calculator for Thyroid Imaging Reporting \& Data System \cite{TIRADS-Calc}.}
+\cvlistitem{\textbf{\href{https://si-physio-intern.shinyapps.io/SELECx_mcq_analysis/}{SELECx MCQ Analysis}:} Analyze quizzes and questions from \href{https://selecx.si.mahidol.ac.th}{SELECx} \cite{SELECx-MCQ-Analysis}.}
+\cvlistitem{\textbf{\href{https://si-physio-intern.shinyapps.io/SELECx_combine_quiz/}{SELECx Combine Quiz}:} Combine quiz reports from \href{https://selecx.si.mahidol.ac.th}{SELECx} \cite{SELECx-Combine-Quiz}.}
+\cvlistitem{\textbf{\href{https://sips-ans.shinyapps.io/read_HRV_report/}{Combine HRV \& BRS report files}:} Combine LabChart's HRV Report files to Excel \cite{Comb-HRV-BRS}.}
+
+% \begin{cvcolumns}
+%   \cvcolumn{R Package}{
+%     \begin{itemize}
+%       \item moodleStats \cite{moodleStats}
+%       \item moodleQuiz \cite{moodleQuiz}
+%       \item zoomclass \cite{zoomclass}
+%       \item thaipdf \cite{thaipdf}
+%       \item labChartHRV \cite{labChartHRV}
+%     \end{itemize}
+%     }
+%   \cvcolumn{Web App}{
+%     \begin{itemize}
+%       \item SELECx MCQ Analysis \cite{SELECx-MCQ-Analysis}
+%       \item SELECx Combine Quiz \cite{SELECx-Combine-Quiz}
+%       \item BTPS Calculator \cite{BTPS-Calc}
+%       \item Metabolic Rate \& Oxygen Consumption Calculator \cite{Met-Rate-Calc} 
+%       \item Combine HRV \& BRS report files \cite{Comb-HRV-BRS}
+%     \end{itemize}
+%   }
+% \end{cvcolumns}
+
 
 % Training
 \section{Training}
@@ -253,7 +313,7 @@
 \cvitem{}{\textbf{Nervous System 1 (PNS)} (SIET216)}
 
 
-\section{Presentation}
+\section{Presentations}
 
 \subsection{At the department of physiology (2564--2565)}
 \cvlistitem{นำเสนอ  โครงการวิจัย-นวัตกรรม ในหัวข้อ \textbf{“R Journey in Physiology Department”} — \href{https://kittipos-r-in-sips.netlify.app}{Slide}}
@@ -264,7 +324,7 @@
 
 
 % Other Experience
-\section{Other Experience}
+\section{Other Experiences}
 
 \subsection{At the department of physiology (2564--2565)}
 \cvlistitem{สร้างและออกแบบ \textbf{ระบบการติดตามภาระงานแพทย์ใช้ทุน} ด้วย Google Sheets และ R package: \texttt{googlesheets4} และ \texttt{googledrive}}
@@ -278,33 +338,11 @@
 % \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
 \newpage
 
-% Projects
-\section{Projects}
-\begin{cvcolumns}
-  \cvcolumn{R Package}{
-    \begin{itemize}
-      \item moodleStats \cite{moodleStats}
-      \item moodleQuiz \cite{moodleQuiz}
-      \item zoomclass \cite{zoomclass}
-      \item thaipdf \cite{thaipdf}
-      \item labChartHRV \cite{labChartHRV}
-    \end{itemize}
-    }
-  \cvcolumn{Web App}{
-    \begin{itemize}
-      \item SELECx MCQ Analysis \cite{SELECx-MCQ-Analysis}
-      \item SELECx Combine Quiz \cite{SELECx-Combine-Quiz}
-      \item BTPS Calculator \cite{BTPS-Calc}
-      \item Metabolic Rate \& Oxygen Consumption Calculator \cite{Met-Rate-Calc} 
-      \item Combine HRV \& BRS report files \cite{Comb-HRV-BRS}
-    \end{itemize}
-  }
-\end{cvcolumns}
-
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
+
+% \nocite{*} % To Include all entries from .bib, regardless of citation.
 % \bibliographystyle{plain}
 \bibliographystyle{unsrt} % Sorting year from lastest first, see: https://tex.stackexchange.com/questions/4461/how-to-sort-bibtex-references-in-reverse-chronological-order
 \bibliography{publications}                        % 'publications' is the name of a BibTeX file
